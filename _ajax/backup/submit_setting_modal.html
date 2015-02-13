@@ -1,0 +1,130 @@
+<form class="form-horizontal">
+						  <legend>Submit Button Settings</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Button Text</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="btnText" class="width-100" value="btnText">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Select Font</label>
+								  <div class="col-sm-4">
+									  <select id="font">
+										<option value="arial,helvetica,sans-serif">Arial</option>
+										<option value="comic sans ms,cursive">Comic Sans MS</option>
+										<option value="courier new,courier,monospace">Courier New</option>
+									  </select>
+								  </div>
+								  <div class="col-sm-4">
+									  <input type="number" id="font_size" value="font_size" placeholder="Font Size" min="0" step="1" pattern="\d">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Font Weight</label>
+								  <div class="col-sm-5">
+									  <label class="radio-inline"><input type="radio" class="font_weight" name="font_weight" value="bold">Bold</label>
+									  <label class="radio-inline"><input type="radio" class="font_weight" name="font_weight" value="normal" checked="checked">Normal</label>
+								  </div>
+								  <div class="col-sm-4">
+							  	  	Select Color : <input type="color" id="color_code" value="color_code" class="width-50">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Style</label>
+								  <div class="col-sm-5">
+									  <label class="radio-inline"><input type="radio" class="btn_style" name="button_style" value="inset">Inset</label>
+									  <label class="radio-inline"><input type="radio" class="btn_style" name="button_style" value="Flat" checked="checked">Flat</label>
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Width</label>
+								  <div class="col-sm-9">
+									  <input type="number" class="button_width" name="width" value="btnWidth" min="0" step="1" pattern="\d"> px
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Height</label>
+								  <div class="col-sm-9">
+									  <input type="number" class="button_height" name="height" value="btnHeight" min="0" step="1" pattern="\d"> px
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="border_radius" value="roundedBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="border_color col-sm-6" name="border_color" value="borderColor">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Button Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="button_color col-sm-6" name="button_color" value="btnColor">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Submit Button Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="input_margin" class="col-sm-12">
+										<option value="">Select Submit Button Margin</option>
+										<option value="">None</option>
+										<option value="marginleft-1">Margin Left 1px</option>
+										<option value="marginleft-2">Margin Left 2px</option>
+										<option value="marginleft-3">Margin Left 3px</option>
+										<option value="marginleft-4">Margin Left 4px</option>
+										<option value="marginleft-5">Margin Left 5px</option>
+										<option value="marginleft-10">Margin Left 10px</option>
+										<option value="marginleft-15">Margin Left 15px</option>
+										<option value="marginleft-20">Margin Left 20px</option>
+										<option value="marginright-1">Margin Right 1px</option>
+										<option value="marginright-2">Margin Right 2px</option>
+										<option value="marginright-3">Margin Right 3px</option>
+										<option value="marginright-4">Margin Right 4px</option>
+										<option value="marginright-5">Margin Right 5px</option>
+										<option value="marginright-10">Margin Right 10px</option>
+										<option value="marginright-15">Margin Right 15px</option>
+										<option value="marginright-20">Margin Right 20px</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">URL Direction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="url_direction" value="urlDirection" class="width-100" placeholder="http://" value="">
+								  </div>
+							  </div>

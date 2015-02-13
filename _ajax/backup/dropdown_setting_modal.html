@@ -1,0 +1,193 @@
+<form class="form-horizontal">
+						  <legend>DropDown</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="label" class="width-100" value="labelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Sub Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="sublabel" class="width-100" value="subLabelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Instruction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="instruction" class="width-100" value="insData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <table class="table" id="select_box_table">
+									<thead>
+										<tr>
+											<td>Name</td>
+											<td>Value</td>
+											<td>Action</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="name" value="selectName"></td>
+											<td><input type="text" class="value" value="selectValue"></td>
+											<td><input type="button" class="btn btn-minier btn-danger delete_option" value="Delete"></td>
+										</tr>  
+									</tbody>
+								  </table>
+								  <p><input type="button" id="add_another_option" value="Add Another" class="btn btn-minier"></p>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-5 control-label no-padding-right">Custom Error Message</label>
+								  <div class="col-sm-7">
+									  <input type="text" id="custom_error_message" class="width-100">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 no-padding-right checkbox-inline">
+								   	<input type="checkbox" value="1" id="required" checked="checked">
+								  	<input type="checkbox" value="1" id="required">
+								  </label>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 no-padding-right checkbox-inline">
+								  	<input type="checkbox" value="1" id="multiple" checked="checked">
+								 	<input type="checkbox" value="1" id="multiple">
+								  </label>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Height</label>
+								  <div class="col-sm-9">
+								  	<select id="input_height" class="col-sm-12">
+										<option value="">Select Height</option>
+										<option value="default">Default</option>
+										<option value="input-lg">Large</option>
+										<option value="input-sm">Small</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Width</label>
+								  <div class="col-sm-9">
+								  	<select id="input_width" class="col-sm-12">
+										<option value="">Select Width</option>
+										<option value="col-md-1">Column 1</option>
+										<option value="col-md-2">Column 2</option>
+										<option value="col-md-3">Column 3</option>
+										<option value="col-md-4">Column 4</option>
+										<option value="col-md-5">Column 5</option>
+										<option value="col-md-6">Column 6</option>
+										<option value="col-md-7">Column 7</option>
+										<option value="col-md-8">Column 8</option>
+										<option value="col-md-9">Column 9</option>
+										<option value="col-md-10">Column 10</option>
+										<option value="col-md-11">Column 11</option>
+										<option value="col-md-12">Column 12</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="label_margin" class="col-sm-12">
+										<option value="">Select Label Margin</option>
+										<option value="marginleft-1">Margin Left 1px</option>
+										<option value="marginleft-2">Margin Left 2px</option>
+										<option value="marginleft-3">Margin Left 3px</option>
+										<option value="marginleft-4">Margin Left 4px</option>
+										<option value="marginleft-5">Margin Left 5px</option>
+										<option value="marginleft-10">Margin Left 10px</option>
+										<option value="marginleft-15">Margin Left 15px</option>
+										<option value="marginleft-20">Margin Left 20px</option>
+										<option value="marginright-1">Margin Right 1px</option>
+										<option value="marginright-2">Margin Right 2px</option>
+										<option value="marginright-3">Margin Right 3px</option>
+										<option value="marginright-4">Margin Right 4px</option>
+										<option value="marginright-5">Margin Right 5px</option>
+										<option value="marginright-10">Margin Right 10px</option>
+										<option value="marginright-15">Margin Right 15px</option>
+										<option value="marginright-20">Margin Right 20px</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Input Field Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="input_margin" class="col-sm-12">
+										<option value="">Select Input Field Margin</option>
+										<option value="marginleft-1">Margin Left 1px</option>
+										<option value="marginleft-2">Margin Left 2px</option>
+										<option value="marginleft-3">Margin Left 3px</option>
+										<option value="marginleft-4">Margin Left 4px</option>
+										<option value="marginleft-5">Margin Left 5px</option>
+										<option value="marginleft-10">Margin Left 10px</option>
+										<option value="marginleft-15">Margin Left 15px</option>
+										<option value="marginleft-20">Margin Left 20px</option>
+										<option value="marginright-1">Margin Right 1px</option>
+										<option value="marginright-2">Margin Right 2px</option>
+										<option value="marginright-3">Margin Right 3px</option>
+										<option value="marginright-4">Margin Right 4px</option>
+										<option value="marginright-5">Margin Right 5px</option>
+										<option value="marginright-10">Margin Right 10px</option>
+										<option value="marginright-15">Margin Right 15px</option>
+										<option value="marginright-20">Margin Right 20px</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="border_radius" value="roundBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="labelColor" id="label_color">
+								  </div>
+								</div>

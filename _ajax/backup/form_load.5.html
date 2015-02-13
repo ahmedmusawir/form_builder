@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Form Load</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<h1 class="text-center">From Data List</h1>
+
+<!--::START:: THIS SECTION IS FOR TEXT BOXT SETTING FORM ::START::-->
+
+<section id="text_box_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			    <div class="modal-body thumbnail">
+			   
+			    <form id="text_box_form" class="form-horizontal" action="" method="" role="form">
+						<legend>Text Box</legend>
+						 <!-- Nav tabs -->
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+						  <li><a href="#advanced" data-toggle="tab">Advanced</a></li>
+						</ul>
+						<!-- Tab panes -->
+					<div class="tab-content">	
+							<div class="tab-pane active" id="basic">
+									<div class="form-group">
+										<label class="col-sm-3 control-label" for="text_box_label_text" name="mylabel">Label</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_label_text" name="myinput" placeholder="Text field">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_sublabel_text">Sub Label</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_sublabel_text" placeholder="Sub Label">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_instruction_text">Instructions</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_instruction_text" placeholder="Instructions">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="">Input Type</label>
+										<div class="col-sm-9">
+											<select id="text_box_select_type" class="form-control input-sm">
+											  <option value="text">Text</option>
+											  <option value="email">Email</option>
+											  <option value="password">Password</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_value_text">Value</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_value_text" placeholder="Value">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_domain_checkbox">
+										<input class="checkbox-inline " type="checkbox" id="text_box_domain_checkbox" placeholder="And.bd.com">
+											Only accept with Domain: 
+										</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" id="text_box_domain_text" placeholder="And.bd.com">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_custom_error_text">Custom Error Message:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" id="text_box_custom_error_text" placeholder="Custom Message">
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="col-sm-1"></span>
+										<label class="control-label" for="text_box_password_checkbox">
+										<input class="checkbox-inline " type="checkbox" id="text_box_password_checkbox" placeholder="">
+											Confirm Password
+										</label>
+								
+									</div>
+									<div class="form-group">
+										<span class="col-sm-1"></span>
+										<label class="control-label" for="text_box_required_checkbox">
+										<input class="checkbox-inline " type="checkbox" id="text_box_required_checkbox" placeholder="">
+											Required
+										</label>
+								
+									</div>
+									<div class="form-group">
+										<span class="col-sm-1"></span>
+										<label class="control-label" for="text_box_readonly_checkbox">
+										<input class="checkbox-inline " type="checkbox" id="text_box_readonly_checkbox" placeholder="">
+											Read Only
+										</label>
+							
+									</div>
+								
+			        </div><!--END :: TAB ONE -->
+			        <div class="tab-pane" id="advanced">
+			        	<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Input Box Height</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_height" class="col-sm-12">
+										<option value="">Select Height</option>
+										<option value="input-md">Default</option>
+										<option value="input-lg">Large</option>
+										<option value="input-sm">Small</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Input Box Width</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_width" class="col-sm-12">
+										<option value="">Select Width</option>
+										<option value="col-md-3">Column 3</option>
+										<option value="col-md-4">Column 4</option>
+										<option value="col-md-5">Column 5</option>
+										<option value="col-md-6">Column 6</option>
+										<option value="col-md-7">Column 7</option>
+										<option value="col-md-8">Column 8</option>
+										<option value="col-md-9">Column 9</option>
+									</select>
+								  </div>
+								</div>
+								
+								<div class="form-group">
+								  <label class="col-sm-3 control-label ">Input Box With Icon</label>
+								  <div class="col-sm-9">
+								  	<div class="input-group">
+									  <span class="input-group-addon">
+										<input type="checkbox" id="text_box_icon_box_condition">
+									  </span>
+									  <input type="text" id="text_box_icon_box_text" class="form-control">
+									</div>
+									<p class="help-block"><a href="#">Click Here</a> for the Icon List. Just copy and paste the icon name here</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label ">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="text_box_border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="text_box_border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="text_box_border_radius" value="roundBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label ">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="red" id="text_box_label_color">
+								  </div>
+								</div>
+			        </div><!--END:: TAB TWO -->
+			    </div> <!--Tab Content-->
+				        <div class="modal-footer">
+							<button id="save_text_box" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+				        </div>
+       			</form>
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+<!--:: END :: THIS SECTION IS FOR TEXT BOXT SETTING FORM :: END ::-->
+
+<!-- ############################################################################################################################################################################### -->
+
+<!--::START:: THIS SECTION IS FOR TEXT AREA SETTING FORM ::START::-->
+
+<section id="text_area_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			    <div class="modal-body thumbnail">
+			   
+			    <form id="text_box_form" class="form-horizontal" action="" method="" role="form">
+						<legend>Text Area</legend>
+						 <!-- Nav tabs -->
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+						  <li><a href="#advanced" data-toggle="tab">Advanced</a></li>
+						</ul>
+						<!-- Tab panes -->
+					<div class="tab-content">	
+							<div class="tab-pane active" id="basic">
+									<div class="form-group">
+										<label class="col-sm-3 control-label" for="text_box_label_text" name="mylabel">Label</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_label_text" name="myinput" placeholder="Text field">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_sublabel_text">Sub Label</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_sublabel_text" placeholder="Sub Label">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_instruction_text">Instructions</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_instruction_text" placeholder="Instructions">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_value_text">Value</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control input-sm" id="text_box_value_text" placeholder="Value">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-sm-3" for="text_box_custom_error_text">Custom Error Message:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" id="text_box_custom_error_text" placeholder="Custom Message">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<span class="col-sm-1"></span>
+										<label class="control-label" for="text_box_required_checkbox">
+										<input class="checkbox-inline " type="checkbox" id="text_box_required_checkbox" placeholder="">
+											Required
+										</label>
+								
+									</div>
+									<div class="form-group">
+										<span class="col-sm-1"></span>
+										<label class="control-label" for="text_box_readonly_checkbox">
+										<input class="checkbox-inline " type="checkbox" id="text_box_readonly_checkbox" placeholder="">
+											Read Only
+										</label>
+							
+									</div>
+								
+			        </div><!--END :: TAB ONE -->
+			        <div class="tab-pane" id="advanced">
+			        	<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Input Box Height</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_height" class="col-sm-12">
+										<option value="">Select Height</option>
+										<option value="5">Default</option>
+										<option value="10">Large</option>
+										<option value="15">Huge</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Input Box Width</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_width" class="col-sm-12">
+										<option value="">Select Width</option>
+										<option value="col-md-3">Column 3</option>
+										<option value="col-md-4">Column 4</option>
+										<option value="col-md-5">Column 5</option>
+										<option value="col-md-6">Column 6</option>
+										<option value="col-md-7">Column 7</option>
+										<option value="col-md-8">Column 8</option>
+										<option value="col-md-9">Column 9</option>
+									</select>
+								  </div>
+								</div>
+								
+								<div class="form-group">
+								  <label class="col-sm-3 control-label ">Input Box With Icon</label>
+								  <div class="col-sm-9">
+								  	<div class="input-group">
+									  <span class="input-group-addon">
+										<input type="checkbox" id="text_box_icon_box_condition">
+									  </span>
+									  <input type="text" id="text_box_icon_box_text" class="form-control">
+									</div>
+									<p class="help-block"><a href="#">Click Here</a> for the Icon List. Just copy and paste the icon name here</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label ">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="text_box_border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="text_box_border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="text_box_border_radius" value="roundBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label ">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="red" id="text_box_label_color">
+								  </div>
+								</div>
+			        </div><!--END:: TAB TWO -->
+			    </div> <!--Tab Content-->
+				        <div class="modal-footer">
+							<button id="save_text_area" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+				        </div>
+       			</form>
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+
+
+
+<!--:: END :: THIS SECTION IS FOR TEXT AREA SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+<!--::START:: THIS SECTION IS FOR RADIO SETTING FORM ::START::-->
+<section id="radio_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			<div class="modal-body thumbnail">
+
+			<form class="form-horizontal">
+						  <legend>Radio</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label">Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="text_box_label_text" class="width-100" value="labelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label">Sub Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="text_box_sublabel_text" class="width-100" value="subLabelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label">Instruction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="text_box_instruction_text" class="width-100" value="insData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <table class="table" id="option_box_table">
+									<thead>
+										<tr>
+											<td>Name</td>
+											<td>Value</td>
+											<td>Action</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="name" value=""></td>
+											<td><input type="text" class="value" value="selectValue"></td>
+											<td><input type="button" class="btn btn-minier btn-danger delete_option" value="Delete"></td>
+										</tr> 
+									</tbody>
+								  </table>
+								  <p><input type="button" id="add_another_option" value="Add Another" class="btn btn-minier"></p>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">Display Style</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_display_style" class="col-sm-12">
+										<option value="">Select</option>
+										<option value="radio-inline">Inline</option>
+										<option value="radio">List</option>
+									</select>
+								  </div>
+								</div>
+								
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">Label Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">Label Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_label_margin" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="-5px">Default Size + Inline Radio</option>
+										<option value="8px">Default Size + List Radio</option>
+										<option value="15px">Large Size + Inline Radio</option>
+										<option value="25px">Large Size + List Radio</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">Radio Size</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_height" class="col-sm-12">
+										<option value="">Select Radio Button Margin</option>
+										<option value="input-md">Default</option>
+										<option value="input-lg">Large</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="labelColor" id="text_box_label_color">
+								  </div>
+								</div>
+
+						    </div><!--END:: TAB TWO -->
+				    	</div> <!--Tab Content-->
+					    <div class="modal-footer">
+							<button id="save_radio" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+			    		</div>
+				</form>
+			</div> <!--modal-body -->
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+
+
+<!--:: END :: THIS SECTION IS FOR RADIO SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+<!--::START:: THIS SECTION IS FOR CHECKBOX SETTING FORM ::START::-->
+
+<section id="checkbox_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			<div class="modal-body thumbnail">
+				<form class="form-horizontal">
+						  <legend>CheckBox</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="label" class="width-100" value="labelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Sub Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="sublabel" class="width-100" value="subLabelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Instruction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="instruction" class="width-100" value="insData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <table class="table" id="option_box_table">
+									<thead>
+										<tr>
+											<td>Name</td>
+											<td>Value</td>
+											<td>Action</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="name" value=""></td>
+											<td><input type="text" class="value" value="selectValue"></td>
+											<td><input type="button" class="btn btn-minier btn-danger delete_option" value="Delete"></td>
+										</tr>   
+									</tbody>
+								  </table>
+								  <p><input type="button" id="add_another_option" value="Add Another" class="btn btn-minier"></p>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Show Checkboxes</label>
+								  <div class="col-sm-9">
+								  	<select id="show_type" class="col-sm-12">
+										<option value="">Select</option>
+										<option value="checkbox-inline">Inline</option>
+										<option value="checkbox">List</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="label_margin" class="col-sm-12">
+										<option value="">Select Label Margin</option>
+										<option value="col-md-offset-1">Offset-1</option>
+										<option value="col-md-offset-2">Offset-2</option>
+										<option value="col-md-offset-3">Offset-3</option>
+										<option value="col-md-offset-4">Offset-4</option>
+										<option value="col-md-offset-5">Offset-5</option>
+										<option value="col-md-offset-6">Offset-6</option>
+										<option value="col-md-offset-7">Offset-7</option>
+										<option value="col-md-offset-8">Offset-8</option>
+										<option value="col-md-offset-9">Offset-9</option>
+										<option value="col-md-offset-10">Offset-10</option>
+										<option value="col-md-offset-11">Offset-11</option>
+										<option value="col-md-offset-12">Offset-12</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Radio Button Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="input_margin" class="col-sm-12">
+										<option value="">Select Radio Button Margin</option>
+										<option value="">None</option>
+										<option value="col-md-offset-1">Offset-1</option>
+										<option value="col-md-offset-2">Offset-2</option>
+										<option value="col-md-offset-3">Offset-3</option>
+										<option value="col-md-offset-4">Offset-4</option>
+										<option value="col-md-offset-5">Offset-5</option>
+										<option value="col-md-offset-6">Offset-6</option>
+										<option value="col-md-offset-7">Offset-7</option>
+										<option value="col-md-offset-8">Offset-8</option>
+										<option value="col-md-offset-9">Offset-9</option>
+										<option value="col-md-offset-10">Offset-10</option>
+										<option value="col-md-offset-11">Offset-11</option>
+										<option value="col-md-offset-12">Offset-12</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="labelColor" id="label_color">
+								  </div>
+								</div>
+
+							</div><!--END:: TAB TWO [ADVANCE] -->
+				    	</div> <!--Tab Content-->
+					    <div class="modal-footer">
+							<button id="save_checkbox" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+			    		</div>
+				</form>
+
+			</div> <!--modal-body -->
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+<!--:: END :: THIS SECTION IS FOR CHECKBOX SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+<!--::START:: THIS SECTION IS FOR DROPDOWN SETTING FORM ::START::-->
+<section id="dropdown_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			<div class="modal-body thumbnail">
+				<form class="form-horizontal">
+						  <legend>DropDown</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label" for="text_box_label_text">Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="text_box_label_text" class="width-100" value="labelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label" for="text_box_sublabel_text">Sub Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="text_box_sublabel_text" class="width-100" value="subLabelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label" for="text_box_instruction_text">Instruction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="text_box_instruction_text" class="width-100" value="insData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <table class="table" id="select_box_table">
+									<thead>
+										<tr>
+											<td>Name</td>
+											<td>Value</td>
+											<td>Action</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="text" class="name" value="selectName"></td>
+											<td><input type="text" class="value" value="selectValue"></td>
+											<td><input type="button" class="btn btn-minier btn-danger delete_option" value="Delete"></td>
+										</tr>  
+									</tbody>
+								  </table>
+								  <p><input type="button" id="add_another_option" value="Add Another" class="btn btn-minier"></p>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-5 control-label">Custom Error Message</label>
+								  <div class="col-sm-7">
+									  <input type="text" id="text_box_custom_error_text" class="width-100">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 checkbox-inline">Required
+								   	<input type="checkbox" value="1" id="text_box_required_checkbox">
+								  </label>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 checkbox-inline">Multiple Select
+								  	<input type="checkbox" value="1" id="text_box_multi_select_checkbox">
+								  </label>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">Label Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_alignment" class="col-sm-12"> 
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">InputBox Height</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_height" class="col-sm-12">
+										<option value="">Select Height</option>
+										<option value="input-md">Default</option>
+										<option value="input-lg">Large</option>
+										<option value="input-sm">Small</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">InputBox Width</label>
+								  <div class="col-sm-9">
+								  	<select id="text_box_width" class="col-sm-12">
+										<option value="">Select Width</option>
+										<option value="col-md-3">Column 3</option>
+										<option value="col-md-4">Column 4</option>
+										<option value="col-md-5">Column 5</option>
+										<option value="col-md-6">Column 6</option>
+										<option value="col-md-7">Column 7</option>
+										<option value="col-md-8">Column 8</option>
+										<option value="col-md-9">Column 9</option>
+									</select>
+								  </div>
+								</div>
+						
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="text_box_border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="text_box_border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="text_box_border_radius" value="roundBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="labelColor" id="text_box_label_color">
+								  </div>
+								</div>
+
+							</div><!--END:: TAB TWO [ADVANCE]-->
+				    	</div> <!--Tab Content-->
+					    <div class="modal-footer">
+							<button id="save_dropdown" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+			    		</div>
+				</form>
+
+			</div> <!--modal-body -->
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+
+
+
+
+
+<!--:: END :: THIS SECTION IS FOR DROPDOWN SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+<!--::START:: THIS SECTION IS FOR IMAGE SETTING FORM ::START::-->
+
+<section id="image_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			<div class="modal-body thumbnail">
+				<form class="form-horizontal">
+						  <legend>Image Settings</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Upload An Image</label>
+								  <div class="col-sm-9">
+									  <input type="file" id="upload_image">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Upload A File From Url</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="upload_from_url" value="imgSrc" class="width-100">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Chose From Existing Image</label>
+								  <div class="col-sm-9">
+									  <input type="button" class="btn" id="existing_image_button" value="Click Here">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Alternative Text</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="alternative_text" class="width-100" value="imgAlt">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Link</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="upload_image_link" class="width-100" value="imgA">
+								  </div>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Width</label>
+								  <div class="col-sm-9">
+									  <input type="number" id="image_width" value="imgWidth" placeholder="" min="0" step="1" pattern="\d">
+									  <label class="radio"><input type="radio" checked="checked" class="width_type" name="width_type" value="px" id="width_pixel">Pixel</label>
+									  <label class="radio"><input type="radio" name="width_type" class="width_type" id="width_percentage" value="%">Percentage</label>
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Height</label>
+								  <div class="col-sm-9">
+									  <input type="number" id="image_height" value="imgHeight" placeholder="" min="0" step="1" pattern="\d">
+									  <label class="radio"><input type="radio" checked="checked" class="height_type" name="height_type" id="height_pixel" value="px">Pixel</label>
+									  <label class="radio"><input type="radio" name="height_type" class="height_type" id="height_percentage" value="%">Percentage</label>
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="border_radius" value="roundBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="width-100" id="border_color" value="borderColor" placeholder="">
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Text Watermark</label>
+								  <div class="col-sm-9">
+									  <input type="text" class="width-100" id="text_watermark" value="textWaterMark" placeholder="Enter Your Text">
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Image Watermark</label>
+								  <div class="col-sm-9">
+									  <input type="text" class="width-100" value="imageWaterMark" id="image_watermark" placeholder="http://(image url)">
+								  </div>
+							  	</div>
+
+							</div><!--END:: TAB TWO [ADVANCE]-->
+				    	</div> <!--Tab Content-->
+					    <div class="modal-footer">
+							<button id="save_image" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+			    		</div>
+				</form>
+
+			</div> <!--modal-body -->
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+
+
+
+
+<!--:: END :: THIS SECTION IS FOR IMAGE SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+<!--::START:: THIS SECTION IS FOR SUBMIT SETTING FORM ::START::-->
+
+<section id="submit_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			<div class="modal-body thumbnail">
+				
+				<form class="form-horizontal">
+						  <legend>Submit Button Settings</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Button Text</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="btnText" class="width-100" value="btnText">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Select Font</label>
+								  <div class="col-sm-4">
+									  <select id="font">
+										<option value="arial,helvetica,sans-serif">Arial</option>
+										<option value="comic sans ms,cursive">Comic Sans MS</option>
+										<option value="courier new,courier,monospace">Courier New</option>
+									  </select>
+								  </div>
+								  <div class="col-sm-4">
+									  <input type="number" id="font_size" value="font_size" placeholder="Font Size" min="0" step="1" pattern="\d">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Font Weight</label>
+								  <div class="col-sm-5">
+									  <label class="radio-inline"><input type="radio" class="font_weight" name="font_weight" value="bold">Bold</label>
+									  <label class="radio-inline"><input type="radio" class="font_weight" name="font_weight" value="normal" checked="checked">Normal</label>
+								  </div>
+								  <div class="col-sm-4">
+							  	  	Select Color : <input type="color" id="color_code" value="color_code" class="width-50">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Style</label>
+								  <div class="col-sm-5">
+									  <label class="radio-inline"><input type="radio" class="btn_style" name="button_style" value="inset">Inset</label>
+									  <label class="radio-inline"><input type="radio" class="btn_style" name="button_style" value="Flat" checked="checked">Flat</label>
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Width</label>
+								  <div class="col-sm-9">
+									  <input type="number" class="button_width" name="width" value="btnWidth" min="0" step="1" pattern="\d"> px
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Height</label>
+								  <div class="col-sm-9">
+									  <input type="number" class="button_height" name="height" value="btnHeight" min="0" step="1" pattern="\d"> px
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="border_radius" value="roundedBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="border_color col-sm-6" name="border_color" value="borderColor">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Button Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="button_color col-sm-6" name="button_color" value="btnColor">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Submit Button Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="input_margin" class="col-sm-12">
+										<option value="">Select Submit Button Margin</option>
+										<option value="">None</option>
+										<option value="marginleft-1">Margin Left 1px</option>
+										<option value="marginleft-2">Margin Left 2px</option>
+										<option value="marginleft-3">Margin Left 3px</option>
+										<option value="marginleft-4">Margin Left 4px</option>
+										<option value="marginleft-5">Margin Left 5px</option>
+										<option value="marginleft-10">Margin Left 10px</option>
+										<option value="marginleft-15">Margin Left 15px</option>
+										<option value="marginleft-20">Margin Left 20px</option>
+										<option value="marginright-1">Margin Right 1px</option>
+										<option value="marginright-2">Margin Right 2px</option>
+										<option value="marginright-3">Margin Right 3px</option>
+										<option value="marginright-4">Margin Right 4px</option>
+										<option value="marginright-5">Margin Right 5px</option>
+										<option value="marginright-10">Margin Right 10px</option>
+										<option value="marginright-15">Margin Right 15px</option>
+										<option value="marginright-20">Margin Right 20px</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">URL Direction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="url_direction" value="urlDirection" class="width-100" placeholder="http://" value="">
+								  </div>
+							  </div>
+
+							</div><!--END:: TAB ONE [BASIC]-->
+				    	</div> <!--Tab Content-->
+					    <div class="modal-footer">
+							<button id="save_submit" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+			    		</div>
+				</form>
+
+			</div> <!--modal-body -->
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+
+
+
+<!--:: END :: THIS SECTION IS FOR SUBMIT SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+<!--::START:: THIS SECTION IS FOR FILE UPLOAD SETTING FORM ::START::-->
+
+<section id="file_form_data" class="">
+	<div class="modal-dialog">
+   		<div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          <h3 class="modal-title">Field Settings:</h3>
+	        </div>
+			<div class="modal-body thumbnail">
+
+				<form class="form-horizontal">
+						  <legend>File Settings</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="label" class="width-100" value="labelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Sub Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="sublabel" class="width-100" value="subLabelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Instruction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="instruction" class="width-100" value="insData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Only Upload</label>
+								  <div class="col-sm-9">
+									  <select id="file_type">
+										<option value="1">Images(PNG, JPEG, JPG, TTF, GIF)</option>
+										<option value="2">Documents (PDF, WORD, PPT)</option>
+									  </select>
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Select Font</label>
+								  <div class="col-sm-4">
+									  <select id="font">
+										<option value="arial,helvetica,sans-serif">Arial</option>
+										<option value="comic sans ms,cursive">Comic Sans MS</option>
+										<option value="courier new,courier,monospace">Courier New</option>
+									  </select>
+								  </div>
+								  <div class="col-sm-4">
+									  <input type="number" id="font_size" value="font_size" placeholder="Font Size" min="0" step="1" pattern="\d">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Font Weight</label>
+								  <div class="col-sm-5">
+									  <label class="radio-inline"><input type="radio" class="font_weight" name="font_weight" value="bold">Bold</label>
+									  <label class="radio-inline"><input type="radio" class="font_weight" name="font_weight" value="normal">Normal</label>
+								  </div>
+								  <div class="col-sm-4">
+							  	  	Select Color : <input type="color" id="color_code" value="color_code" class="width-50">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="label_margin" class="col-sm-12">
+										<option value="">Select Label Margin</option>
+										<option value="col-md-offset-1">Offset-1</option>
+										<option value="col-md-offset-2">Offset-2</option>
+										<option value="col-md-offset-3">Offset-3</option>
+										<option value="col-md-offset-4">Offset-4</option>
+										<option value="col-md-offset-5">Offset-5</option>
+										<option value="col-md-offset-6">Offset-6</option>
+										<option value="col-md-offset-7">Offset-7</option>
+										<option value="col-md-offset-8">Offset-8</option>
+										<option value="col-md-offset-9">Offset-9</option>
+										<option value="col-md-offset-10">Offset-10</option>
+										<option value="col-md-offset-11">Offset-11</option>
+										<option value="col-md-offset-12">Offset-12</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">File Box Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="input_margin" class="col-sm-12">
+										<option value="">File Box Margin</option>
+										<option value="">None</option>
+										<option value="col-md-offset-1">Offset-1</option>
+										<option value="col-md-offset-2">Offset-2</option>
+										<option value="col-md-offset-3">Offset-3</option>
+										<option value="col-md-offset-4">Offset-4</option>
+										<option value="col-md-offset-5">Offset-5</option>
+										<option value="col-md-offset-6">Offset-6</option>
+										<option value="col-md-offset-7">Offset-7</option>
+										<option value="col-md-offset-8">Offset-8</option>
+										<option value="col-md-offset-9">Offset-9</option>
+										<option value="col-md-offset-10">Offset-10</option>
+										<option value="col-md-offset-11">Offset-11</option>
+										<option value="col-md-offset-12">Offset-12</option>
+									</select>
+								  </div>
+								</div>
+							  <div class="form-group">
+								  <label class="col-sm-5 control-label">Custom Error Message</label>
+								  <div class="col-sm-7">
+									  <input type="text" id="custom_error_message" value="custom_message" class="width-100">
+								  </div>
+							  </div>
+							  <div class="form-group">
+							  	<span class="col-sm-1"></span>
+								  <label class="checkbox-inline">Required<input class="" type="checkbox" value="1" id="required"></label>
+							  </div>
+							</div> <!--END: TAB ONE [BASIC] -->
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-5 control-label no-padding-right">Upload File Limit</label>
+								  <div class="col-sm-7">
+									  <input type="number" id="upload_file_limit" value="file_limit" placeholder="" min="0" step="1" pattern="\d">
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-5 control-label no-padding-right">File Type</label>
+								  <div class="col-sm-7">
+									  <input type="text" id="file_type" value="file_type">
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-5 control-label no-padding-right">File Size</label>
+								  <div class="col-sm-7">
+									  <input type="number" id="file_size" value="file_size" placeholder="" min="0" step="1" pattern="\d"> MB
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-5 control-label no-padding-right">Source of Upload</label>
+								  <div class="col-sm-7">
+									  <label class="radio"><input type="radio" name="upload_type" class="upload_type" checked="checked" value="1">Upload Via Url</label>
+									  <label class="radio"><input type="radio" name="upload_type" class="upload_type" value="2">Upload From Computer</label>
+									  <label class="radio"><input type="radio" name="upload_type" class="upload_type" value="3">Upload Using Facebook</label>
+									  <label class="radio"><input type="radio" name="upload_type" class="upload_type" value="4">Upload Via Instagram</label>
+									  <label class="radio"><input type="radio" name="upload_type" class="upload_type" value="5">Upload Via Flickr</label>
+								  </div>
+							  	</div>
+
+							</div><!--END:: TAB TWO [ADVANCE]-->
+				    	</div> <!--Tab Content-->
+					    <div class="modal-footer">
+							<button id="save_file" type="submit" class="btn btn-primary pull-right">Save</button>
+				        	<button type="submit" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+			    		</div>
+				</form>
+
+			</div> <!--modal-body -->
+   		</div><!-- /.modal-content -->  
+   	</div><!-- /.modal-dialog -->
+</section>
+
+
+
+
+<!--:: END :: THIS SECTION IS FOR FILE UPLOAD SETTING FORM :: END ::-->
+<!-- ################################################################################################################################################################################ -->
+
+
+
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

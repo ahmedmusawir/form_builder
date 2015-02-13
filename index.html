@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>jQ Form Builder</title>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="_css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="_css/pick-a-color-1.2.0.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="_css/font-awesome.min.css">
+		<link href="_css/ace.min.css" rel="stylesheet" media="screen">
+		<link href="_jqui/themes/base/jquery-ui.css" rel="stylesheet" media="screen">
+		<link href="_css/style.css" rel="stylesheet" media="screen">
+		<!-- <link href="_css/custom.css" rel="stylesheet" media="screen"> -->
+		<link href="_css/jq_drag_drop.css" rel="stylesheet" media="screen">
+		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+		<style>
+			.pick-a-color-markup .pick-a-color {
+				padding: 5px;
+				height: 43px;
+				width: 100%;
+			}	
+		</style>
+	</head>
+	<body>
+		<header class="page-header text-center"><h1><a href="http://www.htmlfivedev.com"><img src="logo-130x90.png"></a>jQ Form Builder</h1></header>
+
+		<section class="container">
+			<div class="row">
+				<article class="nav col-sm-3 the-shadow">
+					<ul class="list-group draggable">
+						<li class="list-group-item elm_heading" data-type="heading"><i class="fa fa-tasks"></i>Heading</li>
+						<li class="list-group-item elm_text" data-type="text"><i class="fa fa-camera-retro"></i>Text</li>
+						<li class="list-group-item elm_text_box" data-type="text_box"><i class="fa fa-truck"></i>Text Box</li>
+						<li class="list-group-item elm_text_area" data-type="text_area"><i class="fa fa-tag"></i>Text Area</li>
+						<li class="list-group-item elm_radio" data-type="radio"><i class="fa fa-user"></i>Radio Button</li>
+						<li class="list-group-item elm_checkbox" data-type="checkbox"><i class="fa fa-sun-o"></i>Checkbox</li>
+						<li class="list-group-item elm_dropdown" data-type="dropdown"><i class="fa fa-unlock"></i>DropDown</li>
+						<li class="list-group-item elm_image" data-type="image"><i class="fa fa-users"></i>Image</li>
+						<li class="list-group-item elm_submit" data-type="submit"><i class="fa fa-signal"></i>Submit Button</li>
+						<li class="list-group-item elm_file" data-type="file"><i class="fa fa-play"></i>File UPload</li>
+					</ul>
+					
+				
+				</article>
+				<article class="content col-sm-9">
+					<h2 class="alert alert-info">Drop Your Form Elements Here ...</h2>
+
+					<ul class="">
+						<figure class="droppable sortable"></figure>
+					</ul>
+				</article>
+			</div>
+
+		</section>
+
+ 
+
+  <!-- Modal Android Landscape-->
+  <div class="modal fade" id="heading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h3 class="modal-title">Heading Text:</h3><h4>Edit The Following Text</h4>
+        </div>
+        <div class="modal-body thumbnail">
+          <!-- <img class="img-responsive img-thumbnail" src="_img/carousel_img_1.jpeg" alt="Android Landscape"> -->
+          <form>
+            <textarea id="heading_modal" name="heading_modal" rows="10" cols="80">
+                
+            </textarea>
+            
+        </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-success pull-right" data-button="heading" id="heading_save_btn">Save</button>
+        <button type="button" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+<!-- END Modal Android Landscape-->
+ <!-- Modal Android Landscape-->
+  <div class="modal fade" id="text" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h3 class="modal-title">Simple Text:</h3><h4>Edit the Following Text</h4>
+        </div>
+        <div class="modal-body thumbnail">
+          <!-- <img class="img-responsive img-thumbnail" src="_img/carousel_img_1.jpeg" alt="Android Landscape"> -->
+          <form>
+            <textarea id="text_modal" name="text_modal" rows="10" cols="80">
+                
+            </textarea>
+            
+        </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-success pull-right" data-button="text" id="text_save_btn">Save</button>
+        <button type="button" class="btn btn-primary pull-left" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+<!-- END Modal Android Landscape-->
+ <!-- Modal Android Landscape-->
+  <div class="modal fade" id="multi_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   
+	<!-- DYNAMIC HTML GOES HERE -->
+
+  </div><!-- /.modal -->
+<!-- END Modal Android Landscape-->
+ 
+
+		<!-- jQuery -->
+		<script src="_js/jquery-2.1.0.min.js"></script>
+		<script src="_js/jquery.alterclass.js"></script>
+		<script src="_jqui/ui/jquery-ui.js"></script>
+		<!-- Bootstrap JavaScript -->
+    	<script src="_js/bootstrap.min.js"></script>
+    	<script src="_js/tinycolor-0.9.15.min.js"></script>
+		<script src="_js/pick-a-color-1.2.0.min.js"></script>
+		<script src="_js/ckeditor/ckeditor.js"></script>
+		<script src="_js/ckeditor/adapters/jquery.js"></script>
+		<script src="_js/setImportantStyle.js"></script>
+		<script src="_js/jq_drag_drop.js"></script>
+		<script type="text/javascript">
+		(function ($) {
+
+				DragDrop.init({
+					heading: $(".elm_heading"),
+					text: $(".elm_text"), 
+					text_box: $(".elm_text_box"),
+					text_area: $(".elm_text_area"),
+					radio: $(".elm_radio"),
+					checkbox: $(".elm_checkbox"),
+					dropdown: $(".elm_dropdown"),
+					image: $(".elm_image"),
+					file: $(".elm_file"), 
+          			submit: $(".elm_submit"),
+					drop_box: $(".droppable"), 
+					sort_box: $(".sortable"), 
+		          modals: {
+		              heading: $('#heading'),
+		              text: $('#text'),
+		              multi_modal: $('#multi_modal')
+		            }
+
+				});
+		
+		}) (jQuery);	
+
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

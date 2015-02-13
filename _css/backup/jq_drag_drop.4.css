@@ -1,0 +1,74 @@
+.page-header {
+	margin-top: 0em;
+	padding-top: 1em;
+}
+code {
+	background: white;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	color: black;
+}
+code.element.container {
+	background: lightgrey;
+}
+
+code.element {
+	background: lightgrey;
+}
+
+.widget-box code.element {
+	background: white;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+figure.droppable {
+	background: lightgrey;
+	width: 100%;
+	height: 800px;
+}
+
+ul.list-group {
+	margin-top: 1.5em;
+}
+li.list-group-item:hover {
+	background: #000;
+	color: yellow;
+	cursor: pointer;
+}
+li.hover_class {
+	background: lightgrey;
+}
+li.hover_class:hover {
+	background: white;
+}
+
+li.hover_class:hover code.element.container {
+	background: white;
+}
+i.fa {
+	padding: 1em;
+}
+
+.nav {
+	z-index: 1;
+}
+.content {
+	z-index: 0;
+}
+
+.ui-draggable-dragging {
+	/*color: white;
+	background: black;*/
+	opacity: .5;
+}
+.elm_hover {
+	background: white;
+	/*padding-top: 1em;*/
+	/*padding-bottom: 1em;*/
+}
+div.widget-box {
+	display: none;
+}
+

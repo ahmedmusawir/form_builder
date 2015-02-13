@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Testing Page</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="_css/colorpicker.css">
+		<style>
+			i {
+				height: 100px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<h1 id="element" class="text-center red blue">Testing jQ Class Manipulation</h1>
+		
+		
+		<form>
+		  <label for="color">Pick a color:</label>
+		  <input id="custom" type="color" value="#ab9226"/>
+		  <button id="btn1" type="button" class="btn btn-default">button</button>
+		  <button id="btn2" type="button" class="btn btn-success">button</button>
+		
+		</form>
+
+		<!-- <div class="input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb">
+		  <input type="text" class="span2" value="" >
+		  <span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
+		</div> -->
+
+		<h2>Example</h2>
+          <h2>Attached to a field with hex format specified via options.</h2>
+          <!-- 
+          <div class="well">
+            <input type="text" class="span1" value="#8fff00" id="cp1" >
+			<span class="add-on"><i style="background-color: #8fff00)"></i></span>
+          </div> 
+      		-->
+          <div class="well">
+			<div class="input-append color" data-color="#8fff00" data-color-format="hex" id="cp1">
+
+            <input type="text" class="form-control" value="#8fff00" id="" >
+			<span class="add-on"><i style="background-color: #8fff00)"></i></span>
+
+			</div>
+          </div>
+          
+
+          <h2>Attachet to a field with the rgba format specified via data tag.</h2>
+          <div class="well">
+            <input type="text" class="span3" value="rgb(0,194,255,0.78)" id="cp2" data-color-format="rgba" >
+          </div>
+
+          <h2>As component.</h2>
+          	<div class="well">
+			<!-- <div class="input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp3">
+				<input type="text" class="" value="" readonly >
+				<span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
+			</div> -->
+			<!-- <div class="well">
+			<div class="input-append color" data-color="#8fff00" data-color-format="hex" id="cp3">
+				<input type="text" class="span2" value="" readonly >
+				<span class="add-on"><i style="background-color: #8fff00"></i></span>
+			</div>-->
+			<div class="input-append color" data-color="rgb(255, 146, 180, 1)" data-color-format="rgba" id="cp3">
+				<input type="text" class="" value="" readonly >
+				<span class="add-on"><i style="background-color: rgb(255, 146, 180, 1)"></i></span>
+			</div>
+
+          </div> 
+			<h2>Using events to work with the color.</h2>
+          <div class="well">
+            <a href="#" class="btn small" id="cp4" data-color-format="hex" data-color="rgb(255, 255, 255)">Change background color</a>
+          </div>
+		
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="_js/bootstrap-colorpicker.js"></script>
+		<script src="_js/jquery.alterclass.js"></script>
+		<script src="_jqui/ui/jquery-ui.js"></script>
+		<script>
+
+		$('#cp1').colorpicker({
+				format: 'hex'
+			});
+			$('#cp2').colorpicker();
+			$('#cp3').colorpicker();
+			var bodyStyle = $('body')[0].style;
+			$('#cp4').colorpicker().on('changeColor', function(ev){
+				bodyStyle.backgroundColor = ev.color.toHex();
+			});
+
+
+		$('#btn1').on('click', function (event) {
+			var choice = $('#custom').val();
+			console.log("choice :" + choice);
+			
+			$('#element').css('color', choice);
+			console.log("element color: " + $('#element').css('color'));
+		});
+
+		$('#btn2').on('click', function (event) {
+			var getChoice = $('#element').css('color');
+			console.log("getChoice :" + getChoice);
+			
+			$('#custom').val(getChoice);
+			console.log("element color: " + $('#custom').val());
+		});
+
+		// classArray = $('code').find('.form-group label').attr('class').split(/\s+/);
+		// console.log(classArray);
+
+		// singleClass = $('code').find('.form-group label')
+		// 						.attr('class').split(/\s+/)
+		// 						.filter(function(item){
+		// 						    return typeof item == 'string' && item.indexOf("-label") > -1;            
+		// 						})[0];
+
+		// console.log(singleClass);
+		
+
+
+		// $('button').click(function (argument) {
+		// 	$('#radio_box').children('label').alterClass('radio-*', 'radio');
+		// 	// body...
+		// });
+
+		// console.log($('#radio_box').first('label').attr('class'));
+
+		// var myClass = $('h1').attr('class').split(' ')[0];
+		// console.log('Class 1: ' + myClass);
+		// var myClass = $('h1').attr('class').split(' ')[1];
+		// console.log('Class 2: ' + myClass);
+		// var myClass = $('h1').attr('class').split(' ')[2];
+		// console.log('Class 3: ' + myClass);
+		
+		// var myClasses = $('h1').attr('class');
+		// console.log(myClasses);
+
+
+		// var $h1 = $('h1');
+
+		// var className = $h1.attr('[class^="color-"]'); //NO WORK
+		// var className = $('h1[class^="color-"]').toString(); //RETURNS OBJ
+
+		// $h1.attr('class', 'red');
+		// $h1.addClass('color-red');
+		// var className = $h1.attr('class');
+		// console.log('FIRST CLASS: ' + className);
+
+		// $h1.switchClass('red', 'blue'); //WORKS WITH JQ UI
+		// $h1.alterClass('color-*', 'color-blue');
+		// var className = $h1.attr('class');
+		// console.log('ALTERED CLASS: ' + className);
+
+
+
+		</script>
+	</body>
+</html>

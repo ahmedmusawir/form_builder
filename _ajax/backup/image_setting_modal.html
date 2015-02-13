@@ -1,0 +1,106 @@
+<form class="form-horizontal">
+						  <legend>Image Settings</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Upload An Image</label>
+								  <div class="col-sm-9">
+									  <input type="file" id="upload_image">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Upload A File From Url</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="upload_from_url" value="imgSrc" class="width-100">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Chose From Existing Image</label>
+								  <div class="col-sm-9">
+									  <input type="button" class="btn" id="existing_image_button" value="Click Here">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Alternative Text</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="alternative_text" class="width-100" value="imgAlt">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Link</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="upload_image_link" class="width-100" value="imgA">
+								  </div>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Width</label>
+								  <div class="col-sm-9">
+									  <input type="number" id="image_width" value="imgWidth" placeholder="" min="0" step="1" pattern="\d">
+									  <label class="radio"><input type="radio" checked="checked" class="width_type" name="width_type" value="px" id="width_pixel">Pixel</label>
+									  <label class="radio"><input type="radio" name="width_type" class="width_type" id="width_percentage" value="%">Percentage</label>
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Height</label>
+								  <div class="col-sm-9">
+									  <input type="number" id="image_height" value="imgHeight" placeholder="" min="0" step="1" pattern="\d">
+									  <label class="radio"><input type="radio" checked="checked" class="height_type" name="height_type" id="height_pixel" value="px">Pixel</label>
+									  <label class="radio"><input type="radio" name="height_type" class="height_type" id="height_percentage" value="%">Percentage</label>
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border</label>
+								  <div class="col-sm-3">
+								  	<select id="border_style" class="col-sm-12">
+										<option value="">Select Border</option>
+										<option value="none">None</option>
+										<option value="dotted">Dotted</option>
+										<option value="dashed">Dashed</option>
+										<option value="solid">Solid</option>
+										<option value="double">Double</option>
+									</select>
+									<p class="help-block">Border Style</p>
+								  </div>
+								  <div class="col-sm-3">
+									<div class="input-group">
+									  <input type="number" id="border_thickness" value="borderThickness" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Thickness">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Border Thickness</p>
+								  </div>
+								  <div class="col-sm-3">
+								  	<div class="input-group">
+									  <input type="number" id="border_radius" value="roundBorder" class="width-100" min="0" step="1" pattern="\d" placeholder="Enter Border Radius">
+									  <span class="input-group-addon">
+										px
+									  </span>
+									</div>
+									<p class="help-block">Round Border</p>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Border Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="width-100" id="border_color" value="borderColor" placeholder="">
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Text Watermark</label>
+								  <div class="col-sm-9">
+									  <input type="text" class="width-100" id="text_watermark" value="textWaterMark" placeholder="Enter Your Text">
+								  </div>
+							  	</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Image Watermark</label>
+								  <div class="col-sm-9">
+									  <input type="text" class="width-100" value="imageWaterMark" id="image_watermark" placeholder="http://(image url)">
+								  </div>
+							  	</div>

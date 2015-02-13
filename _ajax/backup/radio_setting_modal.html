@@ -1,0 +1,123 @@
+<form class="form-horizontal">
+						  <legend>Radio</legend>
+						  <ul class="nav nav-tabs">
+							<li class="active"><a href="#basic" data-toggle="tab">Basic</a></li>
+							<li><a href="#advance" data-toggle="tab">Advance</a></li>
+						  </ul>
+						  <div class="tab-content">
+							<div class="tab-pane active" id="basic">
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="label" class="width-100" value="labelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Sub Label</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="sublabel" class="width-100" value="subLabelData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Instruction</label>
+								  <div class="col-sm-9">
+									  <input type="text" id="instruction" class="width-100" value="insData">
+								  </div>
+							  </div>
+							  <div class="form-group">
+								  <table class="table" id="option_box_table">
+									<thead>
+										<tr>
+											<td>Name</td>
+											<td>Value</td>
+											<td>Action</td>
+										</tr>
+									</thead>
+									<tbody>;
+									$(#thisevent).children(.drag_element).children(.form-group).children(div).children(label).each(function(index, element) {
+										selectName = $(this).text();
+										selectValue = $(this).children(input).attr(value);
+										texteditor = <tr>
+											<td><input type="text" class="name" value="$.trim(selectName)"></td>
+											<td><input type="text" class="value" value="selectValue"></td>
+											<td><input type="button" class="btn btn-minier btn-danger delete_option" value="Delete"></td>
+										</tr>;    
+									});
+									
+									texteditor = </tbody>
+								  </table>
+								  <p><input type="button" id="add_another_option" value="Add Another" class="btn btn-minier"></p>
+							  </div>
+							</div>
+							<div class="tab-pane" id="advance">
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Show Radio Buttons</label>
+								  <div class="col-sm-9">
+								  	<select id="show_type" class="col-sm-12">
+										<option value="">Select</option>
+										<option value="radio-inline">Inline</option>
+										<option value="radio">List</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Alignment</label>
+								  <div class="col-sm-9">
+								  	<select id="alignment" class="col-sm-12">
+										<option value="">Select Alignment</option>
+										<option value="text-left">Left</option>
+										<option value="text-right">Right</option>
+										<option value="text-center">Center</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Label Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="label_margin" class="col-sm-12">
+										<option value="">Select Label Margin</option>
+										<option value="col-md-offset-1">Offset-1</option>
+										<option value="col-md-offset-2">Offset-2</option>
+										<option value="col-md-offset-3">Offset-3</option>
+										<option value="col-md-offset-4">Offset-4</option>
+										<option value="col-md-offset-5">Offset-5</option>
+										<option value="col-md-offset-6">Offset-6</option>
+										<option value="col-md-offset-7">Offset-7</option>
+										<option value="col-md-offset-8">Offset-8</option>
+										<option value="col-md-offset-9">Offset-9</option>
+										<option value="col-md-offset-10">Offset-10</option>
+										<option value="col-md-offset-11">Offset-11</option>
+										<option value="col-md-offset-12">Offset-12</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">Radio Button Margin</label>
+								  <div class="col-sm-9">
+								  	<select id="input_margin" class="col-sm-12">
+										<option value="">Select Radio Button Margin</option>
+										<option value="">None</option>
+										<option value="col-md-offset-1">Offset-1</option>
+										<option value="col-md-offset-2">Offset-2</option>
+										<option value="col-md-offset-3">Offset-3</option>
+										<option value="col-md-offset-4">Offset-4</option>
+										<option value="col-md-offset-5">Offset-5</option>
+										<option value="col-md-offset-6">Offset-6</option>
+										<option value="col-md-offset-7">Offset-7</option>
+										<option value="col-md-offset-8">Offset-8</option>
+										<option value="col-md-offset-9">Offset-9</option>
+										<option value="col-md-offset-10">Offset-10</option>
+										<option value="col-md-offset-11">Offset-11</option>
+										<option value="col-md-offset-12">Offset-12</option>
+									</select>
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label class="col-sm-3 control-label no-padding-right">label Color</label>
+								  <div class="col-sm-9">
+									  <input type="color" class="form-control" value="labelColor" id="label_color">
+								  </div>
+								</div>
+							</div>
+						  </div>
+					  </form>

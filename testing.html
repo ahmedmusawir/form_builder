@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Testing Page</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta http-equiv="x-ua-compatible" content="IE=10">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="_css/pick-a-color-1.2.0.min.css">
+		<style>
+			.target {
+				height: 100px;
+				width: 100px;
+				border: 1px solid red;
+				margin: 2em auto;
+			}
+		</style>
+	</head>
+	<body class="container">
+		<h1 id="element" class="text-center red blue">Testing jQ Class Manipulation</h1>
+		
+		<!-- Button trigger modal -->
+		<button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
+		  Launch demo modal
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<input type="text" readonly class="pick-a-color form-control">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="target"><h1>fuck you</h1></div>
+	
+		<!-- jQuery -->
+		<script src="_js/jquery-2.1.0.min.js"></script>
+		<script src="_js/bootstrap.min.js"></script>
+		<script src="_js/tinycolor-0.9.15.min.js"></script>
+		<script src="_js/pick-a-color-1.2.0.min.js"></script>
+		<script src="_js/jquery.alterclass.js"></script>
+		<script src="_jqui/ui/jquery-ui.js"></script>
+		<script>
+		        $(".pick-a-color").pickAColor({
+		        	  showSpectrum            : true,
+					  showSavedColors         : false,
+					  saveColorsPerElement    : false,
+					  fadeMenuToggle          : true,
+					  showHexInput            : true,
+					  showBasicColors         : true,
+					  allowBlank              : false,
+					  showAdvanced            : false
+		        });
+
+		        $('.btn-primary').on('click', function (event) {
+		        	var colorVal = $('.pick-a-color').val();
+		        	// console.log(colorVal);
+		        	$('#myModal').modal('hide');
+		        	// $('.target').css('background', "#" + colorVal);
+		        	$('.target').css('color', "#" + colorVal);
+		        });
+
+		        $('.btn-danger').on('click', function (event) {
+		        	var setColor = $('.target').css('color');
+		        	// var setBackground = $('.target').css('background');
+		        	// console.log(setColor);
+		        	$('.pick-a-color').val(setColor);
+		        })
+		</script>
+	</body>
+</html>
